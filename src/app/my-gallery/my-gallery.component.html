@@ -21,7 +21,7 @@
       <i class="fas fa-arrow-circle-right icon-lightbox-carousel icon-next"></i>
     </button>
 
-    <div *ngIf="prievewImage" class="lightbox-img">
+    <div *ngIf="prievewImage" class="lightbox-img" ngClass="{{ slideLeft ? 'w3-animate-left' : '' }}" ngClass="{{ slideRight ? 'w3-animate-right' : '' }}">
       <!-- <img [src]="currentLightboxImage.imageSrc" [alt]="currentLightboxImage.imageAlt"
       [@animation]="{value:'visible'}"
       (@animation.done)="onAnimationEnd($event)"
